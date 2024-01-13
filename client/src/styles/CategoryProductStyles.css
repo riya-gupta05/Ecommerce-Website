@@ -1,0 +1,81 @@
+.category {
+  flex-wrap: wrap;
+  margin-top: 80px !important;
+}
+.category .row{
+  background-color: rgb(252, 242, 239);
+  margin-bottom: 70px;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.category .card {
+  background-color:  rgba(238, 249, 254, 0.855);
+  width: 17rem;
+  height: 23rem;
+  box-shadow: 1px 2px 8px 0px rgb(138, 137, 137);
+}
+.category .card-name-price {
+  font-family: 'Nunito Sans';
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category .card-price {
+  color: rgb(71, 33, 27);
+  font-family: 'Poppins';
+}
+.category .card-title{
+  font-weight: 300;
+}
+.category .card-text{
+  font-weight: 200;
+}
+.category button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#morebtn{
+background-color: rgb(145, 98, 51);
+color: white;
+font-family: 'Ubuntu';
+font-weight: lighter;
+border: none;
+}
+#morebtn:hover{
+  background-color: white;
+  color: rgb(145, 98, 51);
+}
+.catImg{
+  width:100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+.category .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.category .card img:hover {
+ transform: scale(0.9);
+ transition: transform 1s; 
+ cursor: pointer;
+}
+
+.category .card-img-top {
+  object-fit: cover;
+  height: 230px !important;
+}
+@media only screen and (max-width: 600px) {
+  .category .card{
+    width: 18rem;
+  }
+}

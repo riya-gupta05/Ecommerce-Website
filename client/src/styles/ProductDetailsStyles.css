@@ -1,0 +1,162 @@
+.product-details {
+  margin: auto;
+  margin-top: 100px !important;
+  margin-bottom: 100px;
+  width:90%;
+  height:70vh;
+  
+}
+
+.product-details-info {
+ 
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito Sans';
+  font-weight: 100;
+  justify-content: space-between;
+  /* align-items: center; */
+
+}
+.product-details h1{
+  font-weight: 100;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  word-spacing: 6px;
+}
+
+.product-details img{
+border-radius: 10px;
+width:40vw;
+height: 600px;
+  object-fit: cover;
+}
+.spec1{
+  color: rgb(44, 74, 22);
+  font-weight: 100;
+
+}
+.product-details-info h6 {
+  margin-bottom: 20px !important;
+  font-size: 1.4rem;
+  color: rgb(75, 42, 20);
+  margin-left: 40px;
+
+}
+.product-details button{
+
+  border-radius:3px ;
+  height: 3rem;
+  background-color: rgb(64, 22, 22);
+  box-shadow: 1px 1px 5px 0px black;
+  width: 40%;
+ font-family: 'Ubuntu';
+ letter-spacing: 0.8px;
+ position: relative;
+ /* left:50%; */
+ left:25%;
+  
+
+}
+.product-details button:hover{
+  background-color: brown;
+}
+.similar-products{
+  margin: auto;
+  background:linear-gradient(to right ,rgb(206, 231, 229),rgb(252, 219, 206));
+  margin-top: 50px;
+  margin-bottom: 70px;
+  padding: 25px;
+}
+.similar-products h4{
+  font-family: 'Nunito Sans';
+  letter-spacing: 0.8px;
+  color: rgb(53, 21, 21);
+}
+.similar-products p{
+  font-family: 'Poppins';
+  color: rgb(71, 48, 35);
+}
+.similar-products .card {
+  background-color:  rgba(252, 246, 234, 0.855);
+  width: 17rem;
+  height: 23rem;
+  box-shadow: 1px 2px 8px 0px rgb(138, 137, 137);
+}
+
+.similar-products .card-name-price {
+  font-family: 'Nunito Sans';
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.similar-products .card-price {
+  color: rgb(71, 33, 27);
+  font-family: 'Poppins';
+}
+.similar-products button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.similar-products .card-text {
+  font-weight: 200;
+}
+
+.similar-products .card img:hover {
+  transform: scale(0.9);
+  transition: transform 1s; 
+  cursor: pointer;
+}
+
+.similar-products .card-img-top {
+  height: 230px !important;
+  object-fit: cover;
+}
+#morebtn{
+  background-color: rgb(145, 98, 51);
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: lighter;
+  border: none;
+  }
+  #morebtn:hover{
+    background-color: white;
+    color: rgb(145, 98, 51);
+  }
+  @media only screen and (max-width: 600px) {
+    .product-details{
+      height: fit-content;
+    }
+    .product-details img{
+      width: 80vw;
+      height: 400px;
+    }
+    .product-details-info{
+      margin-top: 30px;
+      text-align: left;
+    }
+    .product-details-info h6{
+      margin-top: 20px;
+      margin-left: 0;
+      font-size: 1rem;
+    }
+    .product-details-info button{
+      width: 95%;
+      left: 0;
+      height: 2.5rem;
+      margin-top: 20px;
+    }
+    .product-details h1{
+      
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+      word-spacing: 6px;
+    }
+    
+  }

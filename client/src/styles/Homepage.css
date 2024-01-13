@@ -1,0 +1,211 @@
+/* .banner-img {
+  margin-top: 60px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Ubuntu:wght@300;400;500&display=swap');
+.home-page h1 {
+  margin-top: 80px;
+  color: rgb(145, 98, 51);
+  font-family: "Nunito Sans", serif;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: 100;
+
+}
+
+.filter-ic{
+  border-radius: 50%;
+  width:50px;
+  height: 50px;
+  padding: 5px;
+  background-color: rgb(84, 52, 44);
+  color: rgb(253, 244, 224);
+  display: none;
+  position: fixed;
+  box-shadow: 2px 2px 2px 0px rgb(79, 76, 76);
+    
+  right:25px;
+  bottom: 60px;
+}
+#productsdiv{
+  display: block;
+  margin-right: 100px;
+  background:linear-gradient(to right,rgb(250, 238, 238),rgb(255, 253, 239));
+  margin-bottom: 60px;
+}
+.home-page {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.d-flex{
+  gap: 20px;
+}
+.home-page .card {
+  background-color:  rgba(252, 246, 234, 0.855);
+  width: 17rem;
+  height: 23rem;
+  box-shadow: 1px 2px 8px 0px rgb(130, 106, 106);
+}
+.home-page .card-name-price {
+  font-family: 'Nunito Sans';
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page .card-price {
+  color: rgb(71, 33, 27);
+  font-family: 'Poppins';
+}
+.home-page .card-title{
+  font-weight: 300;
+}
+.home-page .card-text{
+  font-weight: 200;
+}
+.home-page button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#morebtn{
+background-color: rgb(145, 98, 51);
+color: white;
+font-family: 'Ubuntu';
+font-weight: lighter;
+border: none;
+}
+#morebtn:hover{
+  background-color: white;
+  color: rgb(145, 98, 51);
+}
+#btnsep{
+  display: flex;
+ gap: 5px;
+}
+#cartaddbtn{
+  background-color: rgb(82, 38, 38);
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: lighter;
+  border: none;
+}
+#cartaddbtn:hover{
+  background-color: wheat;
+  color: rgb(82, 38, 38);
+}
+.home-page .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.home-page .card img:hover {
+ transform: scale(0.9);
+ transition: transform 1s; 
+ cursor: pointer;
+}
+
+.home-page .card-img-top {
+  object-fit: cover;
+  height: 230px !important;
+}
+/* ==================
+filters
+============== */
+.filters{
+border:1px solid brown;
+border-radius: 8px;
+border-right: none;
+  position: fixed;
+  top: 190px;
+  right: 0px;
+  width: 290px;
+  background-color: rgb(248, 247, 239);
+
+ 
+
+}
+.extra1{
+  font-family: 'Ubuntu';
+}
+.filters h4 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+font-family: 'Nunito Sans';
+font-weight: 400;
+letter-spacing: 0.4px;
+color: rgb(57, 86, 112) !important;
+padding: 2px;
+ 
+  border-bottom: 1px solid rgba(183, 175, 154, 0.71);
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+.hidder{
+  display: none;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+.filters button {
+  background-color: rgb(63, 26, 26);
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Ubuntu';
+  letter-spacing: 0.6px;
+  font-weight: 100;
+}
+
+.loadmore {
+  color: rgb(76, 65, 40);
+  font-weight: lighter;
+  font-family: 'Ubuntu';
+  font-size: 17px !important;
+}
+@media only screen and (max-width: 600px) {
+  #productsdiv{
+    margin: auto;margin-left: 60px;
+  }
+  .filters{
+    position: fixed;
+   top:100;
+   box-shadow: 2px 2px 5px 0px black;
+   z-index: 3;
+    border-right: 1px solid brown;
+    width:70%;
+    margin-left: 10px;
+   
+  }
+  .home-page h1{
+    font-size: 1.6rem;
+  }
+  .home-page .card{
+    width:21rem;
+  }
+  .filter-ic{
+    z-index: 3;
+    display: block;
+
+    
+  }
+}
+
