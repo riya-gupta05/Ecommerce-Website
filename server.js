@@ -1,4 +1,5 @@
 import express from "express";
+const { default: mongoose } = require('mongoose');
 import colors from "colors";
 import dotenv from "dotenv";
 import morgan from "morgan";
@@ -12,7 +13,15 @@ import cors from "cors";
 dotenv.config();
 
 //databse config
-connectDB();
+const connectDB=async()=>{
+    try{
+        await mongoose.connect(process.env.MONGO_URL)
+        console.log("db connected")
+    }
+    catch(err){
+console.log(err)
+    }
+}
 
 //rest object
 const app = express();
@@ -37,6 +46,7 @@ const PORT = process.env.PORT || 8080;
 
 //run listen
 app.listen(PORT, () => {
+connectDB();
   console.log(
     `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan
       .white
